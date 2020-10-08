@@ -1,0 +1,124 @@
+.h-container {
+  grid-template-rows: 2.75rem 18.94rem;
+}
+/*--  Header--*/
+nav {
+  grid-row: 1;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: $mono;
+  background-color: $white;
+
+  // Logo
+  .logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+    display: block;
+    padding: 0.625rem 1rem;
+  }
+
+  // Menu
+  .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: $blue;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+
+    li {
+      line-height: 28px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 5%;
+      color: $white;
+
+      // Hover
+      &:hover {
+        color: $aqua;
+        text-decoration: line-through;
+      }
+
+      // Active
+      &:active {
+        color: rgba(6, 10, 36, 0.56%);
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  // Menú hamburguesa
+  .menu-icon {
+    padding: 22px 19px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+
+    // Icono hamburguesa
+    // linea central
+    .nav-icon {
+      background-color: $black;
+      display: block;
+      width: 18px;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+
+      // primer linea
+      &:before {
+        background-color: $black;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        transition: all 0.2s ease-out;
+      }
+
+      // tercer linea
+      &:after {
+        background-color: $black;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -5px;
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+
+  // desaparece el checkbox
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+
+  // Transición X
+
+  .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+
+  .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}

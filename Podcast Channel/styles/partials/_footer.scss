@@ -1,0 +1,31 @@
+/*--  Footer --*/
+.footer-container {
+  width: 100%;
+  height: 7.56rem;
+
+  p {
+    padding-top: 1.5rem;
+    padding-left: 2.94rem;
+    padding-right: 2.88rem;
+    font-family: $mono;
+    font-size: 14px;
+    color: $negro;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .footer-icon-container {
+    padding-left: 1.81rem;
+    padding-right: 1.81rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: $negro;
+    }
+    i {
+      width: 1rem;
+    }
+  }
+}

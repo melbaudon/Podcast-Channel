@@ -1,0 +1,186 @@
+/*--  Episodios--*/
+.episodios-container {
+  position: relative;
+  height: 81.25rem;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  clip-path: polygon(0 3%, 100% 0, 100% 95%, 0 100%);
+  margin-top: 1.5rem;
+  h1 {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 1.31rem;
+    font-family: $sans;
+    font-size: 36px;
+    color: $white;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+  }
+  .podcast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0.69rem;
+    .podcast {
+      width: 100%;
+      height: 14.5rem;
+      padding-bottom: 11px;
+      padding-top: 11px;
+    }
+  }
+}
+
+/*--  De donde venimos --*/
+.dedondevenimos-container {
+  display: grid;
+  .phone-container {
+    transform: translateY(-120px);
+    width: 100%;
+    img {
+      width: 100%;
+      z-index: 900;
+    }
+  }
+  .text-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -5rem;
+
+    h1 {
+      font-family: $sans;
+      font-size: 36px;
+      color: $black;
+      letter-spacing: 0;
+      line-height: 42px;
+      font-weight: 400;
+      .h1-d {
+        width: 50%;
+      }
+    }
+    p {
+      padding-top: 0.5rem;
+      font-family: $mono;
+      font-size: 14px;
+      color: $black;
+      letter-spacing: 0;
+      line-height: 22px;
+    }
+  }
+}
+
+/*--  Invitados --*/
+
+.invitados-container {
+  margin-top: 3.86rem;
+  h1 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-family: $sans;
+    font-size: 36px;
+    color: $black;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+  }
+
+  .images-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    img {
+      width: 100%;
+      margin-bottom: -5px;
+      padding: 0;
+    }
+  }
+}
+
+/*--  Temas --*/
+.temas-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  h1 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-family: $sans;
+    font-size: 36px;
+    color: $black;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+  }
+  .icon-container {
+    width: 100%;
+    margin-top: 1.5rem;
+    .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3.06rem;
+      margin-bottom: 3.06rem;
+      img {
+        width: 6.5rem;
+        height: 6.5rem;
+        padding-top: 0.81rem;
+        padding-bottom: 0.81rem;
+      }
+      h2 {
+        font-family: $sans;
+        font-weight: 700;
+        font-size: 24px;
+        color: $black;
+        letter-spacing: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+/*--  Novedades --*/
+.novedades-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 21.31rem;
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  margin-top: 2.63rem;
+
+  h1 {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: $sans;
+    font-size: 36px;
+    color: $white;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 400;
+  }
+
+  a {
+    margin-top: 2.25rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 18rem;
+    height: 3rem;
+    padding: 0.81rem 1.38rem;
+    background: $aqua;
+    font-family: $mono;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    border: none;
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+      color: $white;
+    }
+  }
+}

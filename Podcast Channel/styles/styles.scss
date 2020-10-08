@@ -1,0 +1,21 @@
+@import "partials/variables";
+@import "partials/header";
+@import "partials/hero";
+@import "partials/main";
+@import "partials/footer";
+@import "partials/desktop";
+
+/*-----------------------------------------------------------------------------------*/
+/*  Mobile first
+/*-----------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  box-sizing: border-box;
+  font-size: 14px;
+}
